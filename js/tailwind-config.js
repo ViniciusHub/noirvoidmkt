@@ -1,4 +1,5 @@
-tailwind.config = {
+window.tailwind = {
+  config: {
             darkMode: "class",
             theme: {
                 extend: {
@@ -94,3 +95,4 @@ tailwind.config = {
                 },
             },
         }
+};
