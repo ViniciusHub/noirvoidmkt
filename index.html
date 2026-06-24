@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NOIRVOID - Streetwear Concept</title>
+<script src="js/tailwind-config.js"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700;800&amp;family=DM+Sans:wght@400;700&amp;family=Montserrat:wght@400;700&amp;family=Ephesis&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen relative selection:bg-primary selection:text-void-black">
+<div class="fixed inset-0 texture-overlay z-50 pointer-events-none"></div>
+<!-- 1. Header: Thin Promo Bar & Monteleste-style Nav -->
+<div class="bg-primary text-void-black py-1 px-4 text-center w-full z-50 relative">
+<p class="text-[10px] uppercase tracking-[0.2em] font-bold">DROP 01 EM DESENVOLVIMENTO · LISTA DE ESPERA ABERTA · ENVIO BRASIL</p>
+</div>
+<header class="bg-void-black border-b border-border-muted sticky top-0 w-full z-40">
+<div class="max-w-[1440px] mx-auto px-6 h-16 flex justify-between items-center">
+<!-- Logo Left -->
+<a class="font-headline-lg text-[28px] font-extrabold tracking-tighter text-primary" href="/">NOIRVOID</a>
+<!-- Center Nav -->
+<nav class="hidden lg:flex items-center space-x-8">
+<a class="monteleste-nav-link" href="#">Lançamentos</a>
+<a class="monteleste-nav-link" href="#mais-vendidos">Mais Vendidos</a>
+<a class="monteleste-nav-link" href="#">Camisetas</a>
+<a class="monteleste-nav-link" href="#">Oversized</a>
+<a class="monteleste-nav-link" href="#manifesto">Manifesto</a>
+<a class="monteleste-nav-link" href="#lista">Lista</a>
+</nav>
+<!-- Right Icons -->
+<div class="flex items-center space-x-5 text-primary">
+<button class="hover:opacity-70"><span class="material-symbols-outlined text-[22px]">search</span></button>
+<button class="hover:opacity-70"><span class="material-symbols-outlined text-[22px]">person</span></button>
+<button class="hover:opacity-70"><span class="material-symbols-outlined text-[22px]">favorite</span></button>
+<button class="hover:opacity-70 relative">
+<span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+<span class="absolute -top-1 -right-1 bg-primary text-void-black text-[9px] font-bold w-4 h-4 flex items-center justify-center rounded-full">0</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- 2. Hero Section: Slider Style -->
+<section class="relative w-full aspect-[21/9] md:h-[85vh] overflow-hidden bg-surface-container-lowest">
+<div class="absolute inset-0 z-0">
+<img alt="Main Hero" class="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida/AP1WRLuCjBOjrOawS_JP-IOxcyeo0nnp8zW_K_xNpOB1SZciJYmii9skCwByDL3p55FuUTMV6N5Hp_lP4jlLiZJUmOYZ2BN8WFup0dhSggdw7MbKqII-K5Nx93nmfxWNxmGh8NVOc2F-rmRjs7piQOjkN3UPn2bX0fUmTjk4Isomi02Ef8b5co82SuNUp_js0MsAn9fqs_143hSq_K-W5UguW8tGhJw5fJcXwqCx1mpmqPtVPTYs7nsa5LTat6ct"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-void-black/80 to-transparent"></div>
+<div class="relative z-10 h-full flex flex-col justify-center items-center text-center px-margin-mobile">
+<p class="font-label-caps text-[12px] text-primary mb-4 tracking-[0.4em] uppercase">NOIRVOID CONCEPT — 2026</p>
+<h1 class="font-display-hero-mobile md:text-[120px] md:leading-[100px] text-primary uppercase font-black italic tracking-tighter mb-8">
+                FEITO PRA<br/>VENCER
+            </h1>
+<p class="font-body-md max-w-xl text-on-surface-variant mb-10 text-[14px] leading-relaxed">
+                UMA LOJA CONCEITO DA NOIRVOID COM VISUAL PREMIUM, CAMISETAS OVERSIZED E REFERÊNCIAS SUTIS PARA QUEM ENTENDE SEM PRECISAR ESTAR ESCRITO.
+            </p>
+<div class="flex gap-4">
+<a class="bg-primary text-void-black px-10 py-3 font-bold text-[12px] uppercase hover:bg-secondary transition-colors" href="#mais-vendidos">Ver Coleção</a>
+</div>
+</div>
+<!-- Promo Ticker Below Hero (Monteleste style) -->
+<div class="absolute bottom-0 w-full bg-void-black/80 backdrop-blur-sm border-t border-border-muted py-2">
+<div class="flex justify-around items-center text-[10px] font-bold uppercase tracking-widest text-on-surface-variant overflow-x-auto whitespace-nowrap px-4">
+<span class="px-4">CASHBACK DE 10% EM TODAS AS COMPRAS</span>
+<span class="px-4 border-l border-border-muted">10X SEM JUROS NO CARTÃO</span>
+<span class="px-4 border-l border-border-muted">5% OFF NO PIX</span>
+<span class="px-4 border-l border-border-muted">FRETE GRÁTIS ACIMA DE R$399</span>
+</div>
+</div>
+</section>
+<!-- 3. Feature Tiles: 4 vertical cards -->
+<section class="bg-void-black py-12 px-margin-mobile md:px-margin-desktop">
+<div class="max-w-[1440px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="relative aspect-[3/4] overflow-hidden group cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPJ5d94vCArSplz2AH6KEB2WbL-1hdk3JSPg0uQ8EBpg52EBtuI1a0KKNSe_5J1DA1FpO7651Z546xf-ReZVvjgn5BhlNs8iTSX4oI9vYTR3NnvTt5oS_7JmCWmLzN7wTovFXNGMUPHt-kuJYelNcqmE4EHAl99ZxbMvr1bnwuy821lMgPHmY5onSiBGA4LWxp4ftHU0z1lk3qbklzP81pbJZ8NEHqvk5RrVMzw6Rm_FvJg75RgTghVIVZWfjHrkuDtVFsMLGeG5rY"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent"></div>
+</div>
+<div class="relative aspect-[3/4] overflow-hidden group cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLuCjBOjrOawS_JP-IOxcyeo0nnp8zW_K_xNpOB1SZciJYmii9skCwByDL3p55FuUTMV6N5Hp_lP4jlLiZJUmOYZ2BN8WFup0dhSggdw7MbKqII-K5Nx93nmfxWNxmGh8NVOc2F-rmRjs7piQOjkN3UPn2bX0fUmTjk4Isomi02Ef8b5co82SuNUp_js0MsAn9fqs_143hSq_K-W5UguW8tGhJw5fJcXwqCx1mpmqPtVPTYs7nsa5LTat6ct"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent"></div>
+</div>
+<div class="relative aspect-[3/4] overflow-hidden group cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPJ5d94vCArSplz2AH6KEB2WbL-1hdk3JSPg0uQ8EBpg52EBtuI1a0KKNSe_5J1DA1FpO7651Z546xf-ReZVvjgn5BhlNs8iTSX4oI9vYTR3NnvTt5oS_7JmCWmLzN7wTovFXNGMUPHt-kuJYelNcqmE4EHAl99ZxbMvr1bnwuy821lMgPHmY5onSiBGA4LWxp4ftHU0z1lk3qbklzP81pbJZ8NEHqvk5RrVMzw6Rm_FvJg75RgTghVIVZWfjHrkuDtVFsMLGeG5rY"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent"></div>
+</div>
+<div class="relative aspect-[3/4] overflow-hidden group cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLuCjBOjrOawS_JP-IOxcyeo0nnp8zW_K_xNpOB1SZciJYmii9skCwByDL3p55FuUTMV6N5Hp_lP4jlLiZJUmOYZ2BN8WFup0dhSggdw7MbKqII-K5Nx93nmfxWNxmGh8NVOc2F-rmRjs7piQOjkN3UPn2bX0fUmTjk4Isomi02Ef8b5co82SuNUp_js0MsAn9fqs_143hSq_K-W5UguW8tGhJw5fJcXwqCx1mpmqPtVPTYs7nsa5LTat6ct"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-transparent"></div>
+</div>
+</div>
+</section>
+<!-- 4. Section Break with Overlapping Script -->
+<section class="relative bg-void-black pt-20 pb-10 text-center overflow-hidden" id="mais-vendidos">
+<div class="absolute left-1/2 -translate-x-1/2 top-4 opacity-30 select-none">
+<span class="script-overlay text-[120px] md:text-[200px] text-primary">os mais vendidos</span>
+</div>
+<div class="relative z-10 pt-16">
+<p class="font-label-caps text-[11px] text-primary uppercase tracking-[0.3em] font-bold">A SELEÇÃO</p>
+<h2 class="font-headline-lg text-primary uppercase text-[24px] mt-2">MAIS VENDIDOS</h2>
+</div>
+</section>
+<!-- 5. Product Grid (Monteleste style) -->
+<section class="bg-void-black px-margin-mobile md:px-margin-desktop pb-24">
+<div class="max-w-[1440px] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-12">
+<!-- Product 1 -->
+<div class="group cursor-pointer">
+<div class="product-card-img-container lancamento product-hover-card relative aspect-[3/4] bg-surface-container-high overflow-hidden mb-4">
+<img alt="Infinite Void Tee verso" class="product-img-default w-full h-full object-cover transition-all duration-500" src="assets/infinite-void-verso.png"/>
+<img alt="Infinite Void Tee frente" class="product-img-hover absolute inset-0 w-full h-full object-cover opacity-0 transition-all duration-500" src="assets/infinite-void-frente.png"/>
+</div>
+<div class="space-y-1">
+<h3 class="font-label-caps text-[11px] font-bold text-primary uppercase tracking-wider">INFINITE VOID TEE - BLACK OVERSIZED</h3>
+<div class="flex items-center gap-2">
+<span class="text-[14px] font-black text-primary">R$ 149,90</span>
+<span class="text-[10px] text-on-surface-variant uppercase">No PIX</span>
+</div>
+<p class="text-[10px] text-on-surface-variant">10x de R$ 14,99 no cartão</p>
+<p class="text-[10px] text-curse-green font-bold uppercase mt-1">Ganhe 10% de Cashback</p>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group cursor-pointer">
+<div class="product-card-img-container lancamento relative aspect-[3/4] bg-surface-container-high overflow-hidden mb-4">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPJ5d94vCArSplz2AH6KEB2WbL-1hdk3JSPg0uQ8EBpg52EBtuI1a0KKNSe_5J1DA1FpO7651Z546xf-ReZVvjgn5BhlNs8iTSX4oI9vYTR3NnvTt5oS_7JmCWmLzN7wTovFXNGMUPHt-kuJYelNcqmE4EHAl99ZxbMvr1bnwuy821lMgPHmY5onSiBGA4LWxp4ftHU0z1lk3qbklzP81pbJZ8NEHqvk5RrVMzw6Rm_FvJg75RgTghVIVZWfjHrkuDtVFsMLGeG5rY"/>
+</div>
+<div class="space-y-1">
+<h3 class="font-label-caps text-[11px] font-bold text-primary uppercase tracking-wider">BLUE CURSE TEE - GRAPHITE</h3>
+<div class="flex items-center gap-2">
+<span class="text-[14px] font-black text-primary">R$ 139,90</span>
+<span class="text-[10px] text-on-surface-variant uppercase">No PIX</span>
+</div>
+<p class="text-[10px] text-on-surface-variant">10x de R$ 13,99 no cartão</p>
+<p class="text-[10px] text-curse-green font-bold uppercase mt-1">Ganhe 10% de Cashback</p>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group cursor-pointer">
+<div class="product-card-img-container relative aspect-[3/4] bg-surface-container-high overflow-hidden mb-4">
+<div class="w-full h-full flex items-center justify-center opacity-20"><span class="material-symbols-outlined text-6xl">image</span></div>
+</div>
+<div class="space-y-1">
+<h3 class="font-label-caps text-[11px] font-bold text-primary uppercase tracking-wider">HOLLOW SIGNAL TEE - OFF WHITE</h3>
+<div class="flex items-center gap-2">
+<span class="text-[14px] font-black text-primary">R$ 139,90</span>
+<span class="text-[10px] text-on-surface-variant uppercase">No PIX</span>
+</div>
+<p class="text-[10px] text-on-surface-variant">10x de R$ 13,99 no cartão</p>
+<p class="text-[10px] text-curse-green font-bold uppercase mt-1">Ganhe 10% de Cashback</p>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group cursor-pointer">
+<div class="product-card-img-container relative aspect-[3/4] bg-surface-container-high overflow-hidden mb-4">
+<div class="w-full h-full flex items-center justify-center opacity-20"><span class="material-symbols-outlined text-6xl">image</span></div>
+</div>
+<div class="space-y-1">
+<h3 class="font-label-caps text-[11px] font-bold text-primary uppercase tracking-wider">VOID CARGO PANTS - CHARCOAL</h3>
+<div class="flex items-center gap-2">
+<span class="text-[14px] font-black text-primary">R$ 289,90</span>
+<span class="text-[10px] text-on-surface-variant uppercase">No PIX</span>
+</div>
+<p class="text-[10px] text-on-surface-variant">10x de R$ 28,99 no cartão</p>
+<p class="text-[10px] text-curse-green font-bold uppercase mt-1">Ganhe 10% de Cashback</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. Large Banners -->
+<section class="bg-void-black space-y-4 px-margin-mobile md:px-margin-desktop mb-24">
+<!-- Cashback Banner -->
+<div class="relative w-full aspect-[21/6] md:h-[300px] flex items-center justify-center overflow-hidden bg-surface-container">
+<div class="absolute inset-0 bg-gradient-to-r from-void-black to-transparent opacity-60"></div>
+<div class="relative z-10 text-center">
+<span class="script-overlay text-[80px] md:text-[140px] text-primary opacity-80 italic">cashback</span>
+<p class="font-label-caps text-[16px] md:text-[24px] text-primary uppercase tracking-widest -mt-6">DE <span class="font-black">10%</span> EM TODAS AS COMPRAS</p>
+</div>
+</div>
+<!-- Promo Banner -->
+<div class="relative w-full aspect-[21/6] md:h-[300px] flex items-center justify-center overflow-hidden bg-surface-container-highest">
+<div class="text-center">
+<h2 class="font-headline-lg text-[32px] md:text-[64px] text-primary uppercase font-black leading-none mb-4">2 CAMISETAS POR R$269</h2>
+<a class="inline-block bg-primary text-void-black px-8 py-3 font-bold text-[11px] uppercase hover:bg-secondary" href="#">EU QUERO</a>
+</div>
+</div>
+</section>
+<!-- Section Break -->
+<section class="relative bg-void-black pt-20 pb-10 text-center overflow-hidden">
+<div class="absolute left-1/2 -translate-x-1/2 top-4 opacity-30 select-none">
+<span class="script-overlay text-[120px] md:text-[200px] text-primary">Conheça mais sobre</span>
+</div>
+<div class="relative z-10 pt-16">
+<p class="font-label-caps text-[11px] text-primary uppercase tracking-[0.3em] font-bold">MANIFESTO</p>
+<h2 class="font-headline-lg text-primary uppercase text-[24px] mt-2">QUEM FAZ ACONTECER</h2>
+</div>
+</section>
+<!-- 7. Manifesto Section (Content from Doc 9) -->
+<section class="bg-void-black py-20 px-margin-mobile md:px-margin-desktop" id="manifesto">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<h3 class="font-display-hero-mobile text-primary uppercase font-black tracking-tighter leading-none">NÃO É COSPLAY.<br/>É STREETWEAR.</h3>
+<p class="font-body-lg text-on-surface-variant text-[18px] leading-relaxed max-w-lg">
+                    A NOIRVOID transforma referências de anime, energia e caos em roupa urbana. Quem conhece reconhece. Quem não conhece ainda vê uma peça forte, usável e premium.
+                </p>
+<div class="h-1 w-20 bg-primary"></div>
+<p class="font-body-md text-on-surface-variant text-[14px]">
+                    Drop pequeno, identidade forte e peças com cara de coleção. A proposta é validar três estampas antes da produção física.
+                </p>
+</div>
+<div class="bg-surface-container-high aspect-video relative overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover grayscale opacity-50" src="https://lh3.googleusercontent.com/aida/AP1WRLuCjBOjrOawS_JP-IOxcyeo0nnp8zW_K_xNpOB1SZciJYmii9skCwByDL3p55FuUTMV6N5Hp_lP4jlLiZJUmOYZ2BN8WFup0dhSggdw7MbKqII-K5Nx93nmfxWNxmGh8NVOc2F-rmRjs7piQOjkN3UPn2bX0fUmTjk4Isomi02Ef8b5co82SuNUp_js0MsAn9fqs_143hSq_K-W5UguW8tGhJw5fJcXwqCx1mpmqPtVPTYs7nsa5LTat6ct"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="bg-primary text-void-black rounded-full p-4 hover:scale-110 transition-transform">
+<span class="material-symbols-outlined fill-1">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Email Capture (Monteleste style) -->
+<section class="bg-surface py-20 px-4 border-y border-border-muted text-center">
+<span class="material-symbols-outlined text-primary mb-4">mail</span>
+<h3 class="font-headline-lg text-primary uppercase mb-2">COLA AÍ COM NÓS, DEIXE O SEU E-MAIL ABAIXO!</h3>
+<p class="text-on-surface-variant text-[12px] mb-8 uppercase tracking-widest">Cadastre-se e receba dicas, promoções e lançamentos.</p>
+<div class="max-w-md mx-auto flex">
+<input class="flex-1 bg-transparent border border-border-muted border-r-0 text-primary px-4 py-3 focus:ring-0 focus:border-primary outline-none text-[12px]" placeholder="Digite seu e-mail..." type="email"/>
+<button class="bg-void-black text-primary border border-primary px-8 py-3 text-[12px] font-black uppercase hover:bg-primary hover:text-void-black transition-colors">CADASTRAR</button>
+</div>
+</section>
+</main>
+<!-- 8. Footer: Dense Multi-column (Monteleste Style) -->
+<footer class="bg-void-black pt-16 pb-8 border-t border-border-muted">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Top Footer -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<div class="space-y-6">
+<a class="font-headline-lg text-[32px] font-extrabold tracking-tighter text-primary" href="#">NOIRVOID</a>
+<p class="text-[12px] text-on-surface-variant leading-relaxed uppercase tracking-tighter">
+                    Cada drop é uma história. Não nos perdemos na multidão. Identidade underground curitibana para o mundo.
+                </p>
+<div class="space-y-2 text-[12px]">
+<p class="text-primary flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">call</span> (41) 99999-3293</p>
+<p class="text-primary flex items-center gap-2"><span class="material-symbols-outlined text-[18px]">mail</span> contato@noirvoid.com.br</p>
+</div>
+</div>
+<div>
+<h4 class="text-[14px] font-black text-primary uppercase mb-6 tracking-widest">INSTITUCIONAL</h4>
+<ul class="space-y-3 text-[12px] text-on-surface-variant uppercase tracking-wider">
+<li><a class="hover:text-primary" href="#">Quem Somos</a></li>
+<li><a class="hover:text-primary" href="#">Compre Seguro</a></li>
+<li><a class="hover:text-primary" href="#">Cashback</a></li>
+<li><a class="hover:text-primary" href="#">Política de Entrega</a></li>
+<li><a class="hover:text-primary" href="#">Trocas e Devoluções</a></li>
+<li><a class="hover:text-primary" href="#">Privacidade</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[14px] font-black text-primary uppercase mb-6 tracking-widest">DÚVIDAS</h4>
+<ul class="space-y-3 text-[12px] text-on-surface-variant uppercase tracking-wider">
+<li><a class="hover:text-primary" href="#">Shipping</a></li>
+<li><a class="hover:text-primary" href="#">Trocas</a></li>
+<li><a class="hover:text-primary" href="#">FAQ</a></li>
+<li><a class="hover:text-primary" href="#">Contact</a></li>
+</ul>
+<h4 class="text-[14px] font-black text-primary uppercase mt-10 mb-6 tracking-widest">NAVEGAÇÃO</h4>
+<ul class="space-y-3 text-[12px] text-on-surface-variant uppercase tracking-wider">
+<li><a class="hover:text-primary" href="#mais-vendidos">Mais Vendidos</a></li>
+<li><a class="hover:text-primary" href="#manifesto">Manifesto</a></li>
+<li><a class="hover:text-primary" href="#lista">Drop 01</a></li>
+</ul>
+</div>
+<div class="space-y-10">
+<div>
+<h4 class="text-[14px] font-black text-primary uppercase mb-6 tracking-widest">FORMAS DE PAGAMENTO</h4>
+<div class="flex flex-wrap gap-2 opacity-60 grayscale hover:grayscale-0 transition-all">
+<img class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmffZm63fA-XQy_m5emwTuf1NTrfi4GyeHtOwQp6DoBNAPa6F-SGPhtsEdI-huP9y-ZhDs_KE0dSOhzdkIKQh3nNN2jPVc0a_vaQl3MUqk9jiml7QA8rleMmf0rD-zlNXS-bS01AuDbJQ7mPkJ1j-WjR_JcAr5Rnv7BE-mQ19E7K4AJkTGjvZeDaHptAgh7xDY8VMVwRNTE7LXbWB7E1q3N-Gp-si-2T5qkVB35GRkTiCZ3MJ3DVt7v1u16074LXTNRsGZxNaluO1S"/>
+<img class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDii4oAWUyHoaZNCB46euXQKG4KI21RUxeDPyzUnzIyp6156rCeLyazZv2bsZ9NJeknG08ycDlKElmT7Kgd_8fsKZOZ_5ASzA3nVsZ5AtgOTcodgIeR7BFwrrup0PRL7o1s2EPSSGpk8RaFfJ_uU0dTvw1vYD18V78BbdcKLu6BLgiuls6-FUSrIDbkQdZFrqLccwt24CYhUTxMA93bNdaCNaOj0PT3X7ceqefMh9vzcMc_KCuK_hx6L1OXna2P3GT3MfovHoXFyQe3"/>
+<img class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj9sUfCNQSwaz8Ng74x-srHTH5I92i0spUrhWKBJ129_qvxp34qAZYLKUH4AYp61zRulXVkHSseFy-2MmSq7jWNqUbn9ZQQtKsQo8BT3DplcDebk7NtvXnmRq9_XpIi-mS2U4VfvGnNApLQigFjWuTn-GLa-F-tzyOZv7VMkmJlpJ1JZTpohREWuWBxawlQzqA2bPvNzpkR8nnpAZ-qVBJjBAVxq1Erc8WpVzVZuygKHQQ6onOmU_-pIbMNlcB-kkHKjkeUtLGwtCn"/>
+<img class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS3vVrF7bAXJBMDWXwm2Uarv7lGxd00podLU1v4Zv9CWDy6mal98mlTUBYs9x_-3j4yKGShiW63JJNkENUh35lY6kZuCyB_JBJHaTFOIKWkNPbLhe7wR8Z3-l2ktEthS6KjyknVyJVlXjapNbKR7ry2oLpQXMR0tqhwjCpAkDgIvI4AvSJgCszmgkksNCl0PaKC7hvkLmzBeLDstqNTA_paxY3UTx2zN5lgtX0Ye_EXywCeDpz8vSB5GwgpVqj_vRSpiAb0hJ8cb1l"/>
+</div>
+</div>
+<div>
+<h4 class="text-[14px] font-black text-primary uppercase mb-6 tracking-widest">SIGA-NOS</h4>
+<div class="flex gap-4">
+<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Footer -->
+<div class="pt-8 border-t border-border-muted flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-on-surface-variant uppercase tracking-[0.2em]">
+<p>© 2024 NOIRVOID. ARCHIVED UNDERGROUND.</p>
+<div class="flex gap-8">
+<a class="hover:text-primary" href="#">TERMOS DE USO</a>
+<a class="hover:text-primary" href="#">POLÍTICA DE PRIVACIDADE</a>
+<button class="text-primary font-black flex items-center gap-1" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">VOLTAR AO TOPO <span class="material-symbols-outlined text-[14px]">arrow_upward</span></button>
+</div>
+</div>
+</div>
+</footer>
+<!-- Cookie Consent (Monteleste style) -->
+<div id="cookie-consent" class="fixed bottom-0 left-0 w-full z-[100] bg-void-black/95 backdrop-blur-md border-t border-border-muted p-4">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[10px] text-on-surface-variant uppercase tracking-wider text-center md:text-left">
+            AO CONTINUAR NAVEGANDO, VOCÊ CONCORDA COM O USO DE COOKIES PARA MELHORAR A EXPERIÊNCIA.
+        </p>
+<button id="cookie-accept" class="bg-primary text-void-black px-12 py-2 text-[10px] font-black uppercase hover:bg-secondary">ACEITAR</button>
+</div>
+</div>
+<script src="js/script.js"></script>
+</body></html>
