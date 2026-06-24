@@ -1,0 +1,54 @@
+.texture-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+        .hero-title-stroke {
+            -webkit-text-stroke: 1px white;
+            color: transparent;
+        }
+        .script-overlay {
+            font-family: 'Ephesis', cursive;
+            line-height: 1;
+            transform: translateY(20%);
+        }
+        .product-card-img-container::after {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: black;
+            color: white;
+            font-size: 8px;
+            padding: 2px 4px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .product-card-img-container.venda-final::after { content: 'OFERTA'; }
+        .product-card-img-container.lancamento::after { content: 'LANÇAMENTO'; }
+
+        .monteleste-nav-link {
+            font-family: 'Barlow Condensed';
+            font-weight: 700;
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #fff;
+            transition: opacity 0.3s;
+        }
+        .monteleste-nav-link:hover { opacity: 0.7; }
+
+/* Infinite Void product hover: default shows back, hover shows front */
+.product-hover-card .product-img-default,
+.product-hover-card .product-img-hover {
+    transform: scale(1);
+}
+.product-hover-card:hover .product-img-default {
+    opacity: 0;
+    transform: scale(1.05);
+}
+.product-hover-card:hover .product-img-hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
